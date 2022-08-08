@@ -1,0 +1,75 @@
+
+@import"fonts";
+@import"variable";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: $roboto;
+    font-size: 14px;
+
+}
+p,a,h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+p{
+    font-size: 14px;
+    font-family: $roboto;
+    line-height: 1.7;
+    
+}
+ol,ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+//swipper css customize 
+
+.swiper-button-next{
+    background-color: $primary_color;
+    width: 40px;
+    height: 100px;
+    right: 0;
+    color: $white;
+}
+
+.swiper-button-prev{
+    background-color: $primary_color;
+    width: 40px;
+    height: 100px;
+    left: -1px;
+    color: $white;
+
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+
+.section-header{
+    .title-p{
+        font-family: $roboto;
+        font-size: 16px;
+        font-weight: 300;
+        color: $title-p;
+        margin-bottom: 15px;
+    }
+    .title-header{
+        font-family: $droid;
+        font-weight: 700;
+        font-size: 48px;
+        color: $title-header;
+    }
+}

@@ -1,0 +1,33 @@
+.domain_feature-section{
+    background-color: $nav_bottom_bg;
+    .df-wrapper{
+       margin-top: 75px;
+    }
+
+}
+
+.df-item{
+    .df-item-inner{
+        .df-item-icon{
+            margin-bottom: 35px;
+            .dfi-link{
+                color: $primary-color;
+                border-bottom: 2px solid$primary-color;
+                padding-bottom: 10px;
+                
+                i{
+                    font-size: 30px;
+                }
+            }
+        }
+        .df-item-content{
+            h5{
+                font-family: $droid;
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 25px;
+            }
+        }
+    }
+            
+}

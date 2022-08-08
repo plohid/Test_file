@@ -1,0 +1,54 @@
+.fun-section{
+    background: url(../image/fun/fun_bg.png) rgba($black, .9);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+
+    .fun-fact-wrapper{
+        padding: 74px 0 62px;
+    }
+
+
+  
+}
+.fun-item{
+    position: relative;
+      .fun-inner{
+        h2{
+            font-family: $droid;
+            font-weight: 700;
+            font-size: 24px;
+            color: $white;
+            .fun-number{
+                display: block;
+                font-family: $lato;
+                font-size: 48px;
+                font-weight: 700;
+            }
+        }
+      } 
+      .fun-icon{
+        color: $white;
+        font-size: 72px;
+        position: absolute;
+        top: -25px;
+        left: 0;
+        opacity: .1;
+      } 
+      &::after{
+        position: absolute;
+        content: "";
+        border-right:2px solid$fun_devider ;
+        width: 3px;
+        height: 100%;
+        top: 0;
+        right: -40%;
+        transform: rotate(27deg);
+      }
+      &:nth-last-of-type(1){
+        &::after{
+            display: none;
+        }
+      }
+}

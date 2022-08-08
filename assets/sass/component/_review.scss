@@ -1,0 +1,102 @@
+.review-section{
+  .review-wrapper{
+
+  }
+}
+
+.review-item{
+
+  .item-icon-lg{
+    p{
+      font-size: 48px;
+      color: $review_rating;
+    }
+  }
+  .ri-inner{
+    margin-top: -52px;
+    .ri-content{
+      h4{
+        font-size: 24px;
+        font-family: $droid;
+        font-weight: 700;
+        color: $review_title;
+        padding-bottom: 20px;
+       
+
+
+      }
+      .ri-rating{
+        gap: 10px;
+        margin-bottom: 30px;
+        li{
+          p{
+            font-size: 18;
+            color: $review_rating;
+          }
+        }
+      }
+      .ri-comment{
+        font-size: 14;
+        font-family: $roboto;
+        color: $service_p;
+        padding-left:15px ;
+        border-left: 1px solid$primary_color;
+      }
+
+    }
+    .ri-user-profile{
+      gap: 20px;
+      .user-thumb{
+        img{
+          object-fit: cover;
+        }
+      }
+      .user-info{
+        .user-name{
+          font-family: $droid;
+          font-size: 16px;
+          font-weight: 700;
+          color: $review_title;
+        }
+        .user-address{
+          font-family: $roboto;
+          font-weight: 300;
+          font-size: 14px;
+          color: $service_p;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+// owl carosel default remove
+.review-wrapper .owl-nav{
+  position: absolute;
+    left: 50%;
+    bottom: -70px;
+    display: flex;
+    gap: 25px;
+    margin-left: -40px;
+    font-size: 24px;
+    button{
+      &:hover{
+        color: $primary_color;
+      }
+    }
+
+    &::after{
+    content: "/";
+    position: absolute;
+    left: 50%;
+    top: -5px;
+    font-size: 30px;
+    margin-left: -3px;
+    z-index: -1;
+    }
+
+
+}
+

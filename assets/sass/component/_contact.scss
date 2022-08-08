@@ -1,0 +1,27 @@
+.contact-section{
+    margin-top: 100px;
+    .contact-wrapper{
+        background-color: $primary_color;
+    }
+}
+.contact-item{
+    padding-block: 45px;
+    gap: 19px;
+    .contact-iocn{
+        p{
+            font-size: 36px;
+            color: $white;
+        }
+    }
+    .contact-content{
+        color: $white;
+        h5{
+            font-family: $droid;
+            font-size: 24px;
+        }
+        p{
+            font-family: $roboto;
+            font-weight: 300;
+        }
+    }
+}

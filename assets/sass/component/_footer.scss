@@ -1,0 +1,108 @@
+.footer-section{
+    background-color: $nav_top_bg;
+    .footer-top{
+
+      .ft-item{
+        .fti-title{
+          margin-bottom: 40px;
+          color: $white;
+          font-family: $droid;
+          font-size: 18px;
+          font-weight: 700;
+        }
+        .fti-content{
+          .fti-text{
+            color: $title_p;
+            font-family: $roboto;
+            font-weight: 300;
+            margin-bottom: 25px;
+          }
+          .fti-btn{
+            font-family: $droid;
+            font-weight: 400;
+            color: $footer_btn;
+
+          }
+          .ft-link{
+            li{
+              padding-block: 4px;
+              a{
+                color: $title_p;
+                i{
+                  margin-right: 10px;
+                  color: $white;
+                }
+              }
+            }
+          }
+          .ft-form{
+            margin-bottom: 20px;
+            .subscribe_input{
+              height: 40px;
+              
+            }
+            .submit_btn{
+              background-color: $primary_color;
+              color: $white;
+              padding: 10px;
+              font-family: $droid;
+              line-height: 24px;
+              position: absolute;
+              right: 6px;
+              top: 50%;
+              height: 35px;
+              border: none;
+              transform: translateY(-50%);
+              display: flex;
+              align-items: center;
+
+            }
+
+          }
+          .pmedhot{
+            p{
+              color: $white;
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+
+
+      .navbar-social{
+        margin-top: 30px;
+        gap: 20px;
+        p{
+          color: $footer_social;
+          
+        }
+        .social-menu{
+          gap: 15px;
+          li{
+            .social-link{
+              font-size: 14px;
+              color: $footer_social;
+              &:hover{
+                color: $primary_color;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer-bottom{
+      border-top:1px solid$service_p ;
+      padding-block: 10px;
+
+      .footer-copy-right{
+        font-size: 16px;
+        font-family: $droid;
+        font-size: 16px ;
+        color: $title_p;
+      }
+    }
+    
+}
+
+
+

@@ -1,0 +1,112 @@
+.domain-section{
+    background-image: url(../image/domain/domain_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .section-header{
+        .title-p{
+            font-family: $roboto;
+            font-size: 16px;
+            font-weight: 300;
+            color: $white;
+            margin-bottom: 23px;
+        }
+        .title-header{
+            font-family: $droid;
+            font-weight: 700;
+            font-size: 36px;
+            color: $white;
+        }
+    }
+    
+
+    .domain-wrapper{
+        .dom-price-tbl{
+            padding-block: 60px;
+            .price-list{
+                gap: 40px;
+                li{
+                    
+                    .dom-name{
+                        font-family: $droid;
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: $white;
+                        
+                        .price{
+                            display: block;
+                            font-size: 18px;
+                            font-weight: 300;
+                            font-family: $roboto;
+                            sub{
+                                //remove bootsrap default 
+                                bottom: 0;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+        .ds-form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .ds-top{
+                position: relative;
+                background-color: $primary-color;
+                height: 60px;
+                width: 625px;
+                text-align: center;
+                padding: 10px;
+                margin-bottom: 60px;
+                .input-ds{
+                    width: 100%;
+                    height: 100%;
+                    padding-inline: 15px;
+                    outline: none;
+                    &::placeholder{
+                        font-family: $droid;
+                        font-size: 14px;
+
+                    } 
+                    &:focus{
+                        outline: none;
+                    }
+                    
+                    
+                }
+                .select-dom{
+                    position: absolute;
+                    right: 10px;
+                    background: #000;
+                    color: #fff;
+                    height: 39px;
+                    bottom: 50%;
+                    transform: translateY(48%);
+                    padding-inline: 21px;
+                    font-family: $droid;
+                    font-size: 14px;
+                    font-weight: 400;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+            .ds-btn{
+                background-color: $primary-color;
+                height: 40px;
+                color: $white;
+                padding-inline: 20px;
+                font-family: $droid;
+                font-size: 18px;
+                font-weight: 400;
+                border: none;
+            }
+        }
+    }
+}
+

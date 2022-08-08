@@ -1,0 +1,39 @@
+@import"fonts";
+
+.slider-section{
+    background-color: $body_bg;
+    padding: 135px 0 133px ;
+
+}
+.slider-content{
+    h1{
+        font-family: $droid;
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 35px;
+    }
+    p{
+        line-height: 1.8;
+    }
+    .slider-btn{
+        padding-inline: 25px;
+        height: 40px;
+        background-color: $primary_color;
+        color: $black;
+        font-family: $droid;
+        font-size: 18px;
+        display: inline-flex;
+        align-items: center;
+        border-radius: 4px;
+        transition: $transition;
+        margin-top: 37px;
+        &:hover{
+            color: $white;
+        }
+        i{
+            margin-left: 10px;
+            font-size: 18px;
+        }
+
+    }
+}

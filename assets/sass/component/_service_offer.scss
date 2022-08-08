@@ -1,0 +1,165 @@
+
+.service-offer{
+
+}
+
+.so-wrapper{
+	margin-bottom: 80px;
+  ul {
+    display: flex;
+		.os-item {
+			background: $white;
+			width: 119px;
+			height: 80px;
+			display: inline-block;
+			border: 1px solid$tab_border;
+			border-left-width: 0;
+			text-align: center;
+			line-height: 80px;
+			position: relative;
+			.oi-icon {
+				font-size: 30px;
+				color: #999999;
+				transition:$transition;
+			}
+			&:after {
+				content: "";
+				background: $primary-color;
+				width: 100%;
+				height: 3px;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				visibility: hidden;
+			}
+			&:before {
+				content: "";
+				position: absolute;
+				border-width: 5px;
+				border-style: solid;
+				border-color: $primary-color transparent transparent transparent;
+				bottom: -9px;
+				left: 50%;
+				margin-left: -5px;
+				visibility: hidden;
+			}
+		}
+
+		li {
+			&:nth-child(1) {
+				.os-item {
+					border-left-width: 1px;
+				}
+			}
+			&:hover {
+				.category-icon {
+					color: $primary-color;
+				}
+				.os-item {
+					&:before {
+						visibility: visible;
+					}
+					&:after {
+						visibility: visible;
+					}
+				}
+			}
+			.os-item.active {
+				.category-icon {
+					color: $primary-color;
+				}
+				&:before {
+					visibility: visible;
+				}
+				&:after {
+					visibility: visible;
+				}
+			}
+		}
+	}
+
+}
+
+
+.serivce-item-wrapper{
+padding-top: 80px;
+}
+
+.tab-content {
+	display: none;
+	&.active{
+		display: block;
+	}
+	h4{
+		font-size: 24px;
+		line-height: 42px;
+		font-family: $droid;
+		font-weight: 700;
+	}
+	.content-text{
+		font-size: 14px;
+		line-height: 30px;
+		font-family: $roboto;
+
+		.quote{
+			display: block;
+			padding-left: 20px;
+			border-left: 2px solid$tab_border;
+			color: $title_p;
+			font-family: $roboto;
+			font-weight: 300;
+		}
+	}
+	.so-btn{
+		padding-inline: 25px;
+		height: 40px;
+		background-color: #119ee6;
+		color: $white;
+		font-family: "Droid Serif";
+		font-size: 18px;
+		display: inline-flex;
+		align-items: center;
+		border-radius: 4px;
+		transition: all 0.3s ease;
+		margin-top: 37px;
+		i{
+			margin-left: 10px;
+		}
+	}
+
+}
+
+.tooltip-inner {
+	background-color: $primary-color;
+	opacity: 1 !important;
+	border-radius: 0;
+}
+.tooltip.bs-tooltip-right {
+	.tooltip-arrow {
+		&::before {
+			border-right-color: $primary-color !important;
+		}
+	}
+}
+.tooltip.bs-tooltip-left {
+	.tooltip-arrow {
+		&::before {
+			border-left-color: $primary-color !important;
+		}
+	}
+}
+.tooltip.bs-tooltip-bottom {
+	.tooltip-arrow {
+		&::before {
+			border-bottom-color: $primary-color !important;
+		}
+	}
+}
+.tooltip.bs-tooltip-top {
+	.tooltip-arrow {
+		&::before {
+			border-top-color: $primary-color !important;
+		}
+	}
+}
+
