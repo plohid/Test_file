@@ -94,11 +94,18 @@
       border-top:1px solid$service_p ;
       padding-block: 10px;
 
-      .footer-copy-right{
+      .fb-text{
         font-size: 16px;
         font-family: $droid;
         font-size: 16px ;
         color: $title_p;
+        .logo-text{
+          color: $primary_color;
+          
+        }
+        i{
+          color: $primary_color;
+        }
       }
     }
     

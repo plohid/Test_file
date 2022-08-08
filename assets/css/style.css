@@ -1076,11 +1076,17 @@ a {
   border-top: 1px solid #555555;
   padding-block: 10px;
 }
-.footer-section .footer-bottom .footer-copy-right {
+.footer-section .footer-bottom .fb-text {
   font-size: 16px;
   font-family: "Droid Serif";
   font-size: 16px;
   color: #999999;
+}
+.footer-section .footer-bottom .fb-text .logo-text {
+  color: #119ee6;
+}
+.footer-section .footer-bottom .fb-text i {
+  color: #119ee6;
 }
 
 /*# sourceMappingURL=style.css.map */
