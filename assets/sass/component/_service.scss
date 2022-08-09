@@ -1,8 +1,11 @@
 .service-section{
     background-color: $primary_color;
-    display: none;
+
+
     .service-wrapper{
         background-color: inherit;
+       
+
         // padding-bottom: 20px;
     }
 
@@ -10,7 +13,12 @@
 .service-item{
     background-color: inherit;
     width: 100%;
+    max-width: 300px;
     height: 170px;
+    padding-bottom: 20px;
+
+    
+    
 
 
     .service-inner{
@@ -20,6 +28,8 @@
     position: relative;
     margin-inline: 10px;
     transition: $transition;
+    padding-bottom: 60px;
+ 
     .si-single{
         top: -18%;
         transition: $transition;
@@ -157,3 +167,60 @@
 
 
 
+// width: calc(100% / 3);
+
+
+
+// responsive header menu 
+@media(max-width: 320px) {
+    .service-wrapper{
+        background-color: inherit;
+        flex-wrap: wrap;
+        gap: 50px;
+        
+    }
+   
+    
+
+
+}
+
+@media(min-width:320px) and (max-width:775px) {
+
+    .service-wrapper{
+        background-color: inherit;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+
+}
+
+
+@media(min-width:775px) and (max-width:992px) {
+
+    .service-wrapper{
+        background-color: inherit;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .service-item{
+        width: 100%; 
+    }
+    
+}
+
+@media(min-width:960px) and (max-width:1140px) {
+
+    .service-item{
+       width: calc(100% / 3)
+    }
+
+}
+
+@media (min-width: 1140px) {
+    
+  }
+
+
+  

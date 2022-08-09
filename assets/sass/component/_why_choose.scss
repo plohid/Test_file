@@ -62,3 +62,142 @@ padding-top: 80px;
     }
     
    
+
+// responsive header menu 
+@media(max-width: 320px) {
+
+  .wc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(50%, 1fr));
+    grid-template-rows: minmax(auto, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 15px;
+    .wc-item{
+        padding: 50px 30px;
+        color: $white;
+        transition: $transition;
+        
+        &:hover, &.active{
+            background-color: $black;
+        }
+        .wci-icon{
+            margin-bottom: 20px;
+            a{
+                font-size: 30px;
+            }
+        }
+        .wci-content{
+            h5{
+                font-size: 18px;
+                font-family: $droid;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    >div:nth-of-type(1){
+        grid-area:unset;
+        background-color: $primary-color;
+        text-align: end;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    >div:nth-of-type(2){
+        grid-area: unset;
+        background-color: $primary-color;
+    }
+    >div:nth-of-type(3){
+        grid-area: unset; 
+        background-color: $primary-color;
+    }
+    >div:nth-of-type(4){
+        grid-area:unset;
+        background-color: $primary-color;
+    }
+    >div:nth-of-type(5){
+        grid-area: unset; 
+        background-color: $primary-color;
+    }
+
+    }
+  
+  
+  }
+  
+  @media(min-width:320px) and (max-width:775px) {
+
+    .wc-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(50%, 1fr));
+        grid-template-rows: minmax(auto, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        gap: 15px;
+        .wc-item{
+            padding: 50px 30px;
+            color: $white;
+            transition: $transition;
+            
+            &:hover, &.active{
+                background-color: $black;
+            }
+            .wci-icon{
+                margin-bottom: 20px;
+                a{
+                    font-size: 30px;
+                }
+            }
+            .wci-content{
+                h5{
+                    font-size: 18px;
+                    font-family: $droid;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        >div:nth-of-type(1){
+            grid-area:unset;
+            background-color: $primary-color;
+            text-align: end;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        >div:nth-of-type(2){
+            grid-area: unset;
+            background-color: $primary-color;
+        }
+        >div:nth-of-type(3){
+            grid-area: unset; 
+            background-color: $primary-color;
+        }
+        >div:nth-of-type(4){
+            grid-area:unset;
+            background-color: $primary-color;
+        }
+        >div:nth-of-type(5){
+            grid-area: unset; 
+            background-color: $primary-color;
+        }
+    
+        }
+      
+  
+  }
+  
+  
+  @media(min-width:775px) and (max-width:992px) {
+    
+  }
+  
+  @media(min-width:960px) and (max-width:1140px) {
+  
+  }
+  
+  @media (min-width: 1140px) {
+    
+  }
+  
