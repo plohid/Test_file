@@ -178,9 +178,15 @@ a {
   left: 0;
   background-color: #119ee6;
 }
+.nav-bottom .header_content .header_menu .navbar .nav-item .dropdown-menu {
+  margin-top: 28px;
+  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.1));
+}
+.nav-bottom .header_content .header_menu .navbar .nav-item .dropdown-menu li .dropdown-item:hover {
+  color: #119ee6;
+}
 .nav-bottom .header_content .header_actions {
-  margin-left: 60px;
-  border-left: 1px solid;
+  margin-left: 62px;
   align-items: center;
   margin-top: 10px;
 }
@@ -194,7 +200,6 @@ a {
   justify-content: center;
   align-items: center;
   margin-left: -32px;
-  padding: 6px;
 }
 .nav-bottom .header_content .header_actions .client-area-btn a {
   padding: 5px;
@@ -205,6 +210,15 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.nav-bottom .header_content .header_actions .client-area-btn a::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 25px;
+  background-color: #aaaaaa;
+  top: -32px;
 }
 .nav-bottom .header_content .header_actions .client-area-btn a i {
   background: #119ee6;
@@ -220,6 +234,7 @@ a {
 .nav-bottom .header_content .header_actions .cart-btn a {
   color: #000;
   transition: all 0.3s ease;
+  margin-left: 30px;
 }
 .nav-bottom .header_content .header_actions .cart-btn a:hover {
   color: #119ee6;
@@ -273,6 +288,7 @@ a {
 
 .service-section {
   background-color: #119ee6;
+  display: none;
 }
 .service-section .service-wrapper {
   background-color: inherit;
@@ -437,7 +453,7 @@ a {
   position: relative;
   background-color: #119ee6;
   height: 60px;
-  width: 625px;
+  width: 100%;
   text-align: center;
   padding: 10px;
   margin-bottom: 60px;
@@ -494,8 +510,17 @@ a {
 }
 .df-item .df-item-inner .df-item-icon .dfi-link {
   color: #119ee6;
-  border-bottom: 2px solid #119ee6;
   padding-bottom: 10px;
+  position: relative;
+}
+.df-item .df-item-inner .df-item-icon .dfi-link::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: #119ee6;
+  bottom: -2px;
+  left: 0;
 }
 .df-item .df-item-inner .df-item-icon .dfi-link i {
   font-size: 30px;
@@ -718,6 +743,7 @@ a {
 
 .so-wrapper {
   margin-bottom: 80px;
+  padding-top: 50px;
 }
 .so-wrapper ul {
   display: flex;
@@ -822,9 +848,14 @@ a {
   border-radius: 4px;
   transition: all 0.3s ease;
   margin-top: 37px;
+  transition: all 0.3s ease;
 }
 .tab-content .so-btn i {
   margin-left: 10px;
+}
+.tab-content .so-btn:hover {
+  color: #fff;
+  background-color: #000;
 }
 
 .tooltip-inner {
@@ -851,6 +882,7 @@ a {
 
 .wc-wrapper {
   margin-bottom: 30px;
+  padding-top: 80px;
 }
 
 .wc-grid {
@@ -862,8 +894,12 @@ a {
   gap: 15px;
 }
 .wc-grid .wc-item {
-  padding: 30px;
+  padding: 50px 30px;
   color: #fff;
+  transition: all 0.3s ease;
+}
+.wc-grid .wc-item:hover, .wc-grid .wc-item.active {
+  background-color: #000;
 }
 .wc-grid .wc-item .wci-icon {
   margin-bottom: 20px;
@@ -900,6 +936,10 @@ a {
 .wc-grid > div:nth-of-type(5) {
   grid-area: 2/4/3/5;
   background-color: #119ee6;
+}
+
+.review-section .review-wrapper {
+  margin-top: 60px;
 }
 
 .review-item .item-icon-lg p {
@@ -1004,6 +1044,8 @@ a {
 }
 .footer-section .footer-top .ft-item .fti-title {
   margin-bottom: 40px;
+}
+.footer-section .footer-top .ft-item .fti-title h5 {
   color: #fff;
   font-family: "Droid Serif";
   font-size: 18px;
@@ -1019,18 +1061,30 @@ a {
   font-family: "Droid Serif";
   font-weight: 400;
   color: #cccccc;
+  transition: all 0.3s ease;
+}
+.footer-section .footer-top .ft-item .fti-content .fti-btn:hover {
+  color: #119ee6;
 }
 .footer-section .footer-top .ft-item .fti-content .ft-link li {
   padding-block: 4px;
 }
 .footer-section .footer-top .ft-item .fti-content .ft-link li a {
   color: #999999;
+  transition: all 0.3s ease;
 }
 .footer-section .footer-top .ft-item .fti-content .ft-link li a i {
   margin-right: 10px;
   color: #fff;
 }
+.footer-section .footer-top .ft-item .fti-content .ft-link li a:hover {
+  color: #119ee6;
+}
+.footer-section .footer-top .ft-item .fti-content .ft-link li a:hover i {
+  color: #119ee6;
+}
 .footer-section .footer-top .ft-item .fti-content .ft-form {
+  position: relative;
   margin-bottom: 20px;
 }
 .footer-section .footer-top .ft-item .fti-content .ft-form .subscribe_input {
@@ -1074,10 +1128,9 @@ a {
 }
 .footer-section .footer-bottom {
   border-top: 1px solid #555555;
-  padding-block: 10px;
+  padding-block: 30px;
 }
 .footer-section .footer-bottom .fb-text {
-  font-size: 16px;
   font-family: "Droid Serif";
   font-size: 16px;
   color: #999999;

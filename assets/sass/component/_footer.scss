@@ -4,11 +4,14 @@
 
       .ft-item{
         .fti-title{
+          h5{
+            color: $white;
+            font-family: $droid;
+            font-size: 18px;
+            font-weight: 700;
+          }
           margin-bottom: 40px;
-          color: $white;
-          font-family: $droid;
-          font-size: 18px;
-          font-weight: 700;
+        
         }
         .fti-content{
           .fti-text{
@@ -21,22 +24,38 @@
             font-family: $droid;
             font-weight: 400;
             color: $footer_btn;
+            transition: $transition;
+            &:hover{
+              color: $primary-color;
+            }
 
           }
           .ft-link{
             li{
               padding-block: 4px;
+             
               a{
                 color: $title_p;
+                transition: $transition;
                 i{
                   margin-right: 10px;
                   color: $white;
                 }
+                &:hover{
+                  color: $primary-color;
+                  i{
+                    color: $primary-color;
+                  }
+                  
+                }
+                
               }
             }
           }
           .ft-form{
+            position: relative;
             margin-bottom: 20px;
+            
             .subscribe_input{
               height: 40px;
               
@@ -55,6 +74,7 @@
               transform: translateY(-50%);
               display: flex;
               align-items: center;
+              
 
             }
 
@@ -92,10 +112,10 @@
     }
     .footer-bottom{
       border-top:1px solid$service_p ;
-      padding-block: 10px;
+      padding-block: 30px;
 
       .fb-text{
-        font-size: 16px;
+
         font-family: $droid;
         font-size: 16px ;
         color: $title_p;

@@ -1,5 +1,7 @@
 .wc-wrapper{
 margin-bottom: 30px;
+padding-top: 80px;
+
 }
 
 .wc-grid {
@@ -10,8 +12,13 @@ margin-bottom: 30px;
     grid-row-gap: 0px;
     gap: 15px;
     .wc-item{
-        padding: 30px;
+        padding: 50px 30px;
         color: $white;
+        transition: $transition;
+        
+        &:hover, &.active{
+            background-color: $black;
+        }
         .wci-icon{
             margin-bottom: 20px;
             a{

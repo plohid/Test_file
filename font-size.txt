@@ -1,0 +1,15 @@
+slider title 			48px 
+service title 			24px 
+domain section title 		36px 
+domain feature title 		48px 
+domain sub header 		18px 
+pricing plan  title 		48px
+pricing plan  sub header	48px
+fun fact title 			24px
+service offer sub header	24
+why choose us sub header	18 px
+client says sub header		24
+contact header sub		24
+footer header 			18px
+
+

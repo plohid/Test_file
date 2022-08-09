@@ -12,8 +12,17 @@
             margin-bottom: 35px;
             .dfi-link{
                 color: $primary-color;
-                border-bottom: 2px solid$primary-color;
                 padding-bottom: 10px;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    width: 60px;
+                    height: 2px;
+                    background-color: $primary-color;
+                    bottom: -2px;
+                    left: 0;
+                }
                 
                 i{
                     font-size: 30px;
