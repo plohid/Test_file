@@ -59,7 +59,32 @@
 
 // responsive header menu 
 @media(max-width: 320px) {
+  .fun-fact-wrapper{
+    padding: 74px 0 62px;
+    gap: 50px;
+}
+
   .fun-item{
+    .fun-inner{
+      h2{
+
+          font-size: 18px;
+
+          .fun-number{
+
+              font-size: 30px;
+
+          }
+      }
+    } 
+    .fun-icon{
+      color: $white;
+      font-size: 72px;
+      position: absolute;
+      top: -25px;
+      left: 0;
+      opacity: .1;
+    } 
       &::after{
         display: none;
       }
@@ -71,6 +96,11 @@
 }
 
 @media(min-width:320px) and (max-width:775px) {
+  .fun-fact-wrapper{
+    padding: 74px 0 62px;
+    gap: 50px;
+}
+
   .fun-item{
     &::after{
       display: none;
@@ -82,14 +112,3 @@
 }
 
 
-@media(min-width:775px) and (max-width:992px) {
-  
-}
-
-@media(min-width:960px) and (max-width:1140px) {
-
-}
-
-@media (min-width: 1140px) {
-  
-}

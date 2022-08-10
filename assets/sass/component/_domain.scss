@@ -110,3 +110,88 @@
     }
 }
 
+
+
+@media(max-width: 320px) {
+    .domain-section{
+    
+        .section-header{
+            .title-p{
+                font-family: $roboto;
+                font-size: 12px;
+                font-weight: 300;
+                color: $white;
+                margin-bottom: 15px;
+            }
+            .title-header{
+                font-family: $droid;
+                font-weight: 700;
+                font-size: 22px;
+                color: $white;
+            }
+        }
+        
+    
+        .domain-wrapper{
+            .dom-price-tbl{
+                padding-block: 30px;
+                .price-list{
+                    gap: 40px;
+                    li{
+                        
+                        .dom-name{
+                            font-family: $droid;
+                            font-weight: 700;
+                            font-size: 14px;
+                            color: $white;
+                            
+                            .price{
+                                display: block;
+                                font-size: 14px;
+                                font-weight: 300;
+                                font-family: $roboto;
+                                sub{
+                                    //remove bootsrap default 
+                                    bottom: 0;
+                                }
+    
+                            }
+                        }
+                    }
+                }
+            }
+            .ds-form{
+
+    
+                .ds-top{
+
+                    padding: 10px;
+                    margin-bottom: 30px;
+                    .input-ds{
+                        width: 100%;
+                        height: 100%;
+                        padding-inline: 15px;
+                        outline: none;
+                        &::placeholder{
+                            font-family: $droid;
+                            font-size: 14px;
+    
+                        } 
+                        &:focus{
+                            outline: none;
+                        }
+                        
+                        
+                    }
+
+                }
+
+            }
+        }
+    }
+    
+    
+
+    
+
+}
